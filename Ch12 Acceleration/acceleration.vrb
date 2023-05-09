@@ -1,0 +1,48 @@
+\frametitle{Proof of Theorem~\ref{thm:agm}}
+\vspace{-0.2in}
+\begingroup\makeatletter\def\f@size{9}\check@mathfonts
+\begin{align*}
+&V^{k+1}-V^k\\
+&=
+\theta_{k}^2
+\left(f(x^{k+1})-f(x^\star)
++\frac{1}{2L}\|\nabla f(y^k)\|^2
+\right)
+-
+\theta_{k-1}^2(f(x^{k})-f(x^\star))\\
+&\qquad
+-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle\\
+&\stackrel{\eqref{eq:agm-ineq1}}{\le}
+\theta_{k}^2
+\left(f(y^k)-f(x^\star)
+\right)
+-
+\theta_{k-1}^2(f(x^{k})-f(x^\star))
+-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle\\
+&=
+(\theta_k^2-\theta_k)(f(y^k)-f(x^k))+\theta_k(f(y^k)-f(x^k))+(\theta_k^2-\theta_{k-1}^2)(f(x^k)-f(x^\star))\\
+&\qquad-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle\\
+&\stackrel{\eqref{eq:agm-phi-rel}}{\le}
+(\theta_k^2-\theta_k)(f(y^k)-f(x^k))+\theta_k(f(y^k)-f(x^\star))-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle\\
+&\stackrel{\eqref{eq:agm-ineq2}, \eqref{eq:agm-ineq3}}{\le}
+(\theta_k^2-\theta_k)\langle \nabla f(y^k),y^k-x^k\rangle
++
+\theta_{k}\langle \nabla f(y^k),y^k-x^\star\rangle
+-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle\\
+%&=\theta_{k}^2\left< \nabla f(y^k), y^k-\left(1-\frac{1}{\theta_{k}}\right)x^k-\frac{1}{\theta_{k}}z^k\right>\\
+&=
+\theta_k\langle \nabla f(y^k),(1-\theta_{k})x^k+\theta_ky^k-z^k\rangle
+\stackrel{\text{def.\ of } z^{k}}{=}0,
+\end{align*}
+\endgroup
+where the first equality follows from
+\begingroup\makeatletter\def\f@size{9}\check@mathfonts
+\[
+\frac{L}{2}\left\|z^k-x^\star-\frac{\theta_k}{L}\nabla f(y^k)\right\|^2-\frac{L}{2}\|z^k-x^\star\|^2=
+-\theta_k\langle \nabla f(y^k),z^k-x^\star\rangle+
+\frac{\theta_k^2}{2L}\|\nabla f(y^k)\|^2.
+\]
+\endgroup
+
+\vspace{-0.20in}
+\qed

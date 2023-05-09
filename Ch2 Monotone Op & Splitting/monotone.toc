@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Set-valued operators}{3}{0}{1}
+\beamer@sectionintoc {2}{Monotone operators}{12}{0}{2}
+\beamer@sectionintoc {3}{Nonexpansive and averaged operators}{32}{0}{3}
+\beamer@sectionintoc {4}{Fixed-point iteration}{36}{0}{4}
+\beamer@sectionintoc {5}{Resolvents}{54}{0}{5}
+\beamer@sectionintoc {6}{Proximal point method}{71}{0}{6}
+\beamer@sectionintoc {7}{Operator splitting}{76}{0}{7}
+\beamer@sectionintoc {8}{Variable metric methods}{103}{0}{8}

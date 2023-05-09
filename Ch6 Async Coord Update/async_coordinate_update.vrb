@@ -1,0 +1,15 @@
+\frametitle{AC-FPI with readers--writers locks}
+\begin{lstlisting}
+// AC-FPI with readers-writers locks
+WHILE (not converged)
+  1. Select i from Uniform{1,2,...,m}
+  2. for j = 1,...,m
+       rw_lock[j].read_lock()
+       read x[j]
+       rw_lock[j].read_unlock()
+  3. Compute s[i] = eta*S[i](x)
+  4. rw_lock[i].write_lock()
+     x[i] = x[i] - s[i]
+     rw_lock[i].write_unlock()
+\end{lstlisting}
+This mechanism ensures the reads and writes of all blocks are consistent, allows multiple agents to concurrently operate on separate blocks, and allows multiple agents to concurrently read from the same block.

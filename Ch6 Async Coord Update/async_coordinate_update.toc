@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Asynchronous fixed-point iteration}{9}{0}{1}
+\beamer@sectionintoc {2}{Extended coordinate friendly operators and exclusive memory access}{37}{0}{2}
+\beamer@sectionintoc {3}{Parameter server framework}{43}{0}{3}
+\beamer@sectionintoc {4}{Methods}{50}{0}{4}
+\beamer@sectionintoc {5}{Exclusive memory access}{62}{0}{5}
